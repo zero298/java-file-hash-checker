@@ -1,4 +1,4 @@
-package hashcheck;
+package com.hexvox.hashcheck;
 
 /**
  *

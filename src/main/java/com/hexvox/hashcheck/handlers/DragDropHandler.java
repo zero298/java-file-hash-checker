@@ -1,7 +1,7 @@
-package hashcheck.handlers;
+package com.hexvox.hashcheck.handlers;
 
-import hashcheck.AlgorithmToUse;
-import hashcheck.HashUtil;
+import com.hexvox.hashcheck.AlgorithmToUse;
+import com.hexvox.hashcheck.HashUtil;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;

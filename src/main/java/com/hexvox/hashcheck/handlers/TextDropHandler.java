@@ -1,4 +1,4 @@
-package hashcheck.handlers;
+package com.hexvox.hashcheck.handlers;
 
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;

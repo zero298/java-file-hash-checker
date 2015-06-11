@@ -1,6 +1,6 @@
-package hashcheck;
+package com.hexvox.hashcheck;
 
-import hashcheck.forms.HashFrame;
+import com.hexvox.hashcheck.forms.HashFrame;
 import java.io.File;
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.CommandLine;
