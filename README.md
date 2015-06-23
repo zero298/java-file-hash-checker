@@ -10,7 +10,7 @@ with drag and drop support.  Presently the tool supports MD5 and SHA hashsums.
 
 ## How do I compile java-file-hash-checker?
 
-As of SHA: f3d15103e177b27d3e5d0533de6ca77e966fb4ba jfhc has been converted to a 
+As of [`f3d1510`][1] jfhc has been converted to a 
 Maven project so you will need to have Maven  installed.  Navigate to the root
 directory after cloning the repo.  Then run `mvn compile` which will compile 
 the project.
@@ -49,3 +49,5 @@ run the command:
 If you just wanted to know whether or not a file matches a given sum:
 
 `java -jar java-file-hash-checker.jar -a md5 -f somefile.txt -e hashstring`
+
+[1]: https://github.com/zero298/java-file-hash-checker/commit/f3d15103e177b27d3e5d0533de6ca77e966fb4ba
