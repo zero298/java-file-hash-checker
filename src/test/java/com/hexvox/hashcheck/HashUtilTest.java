@@ -1,6 +1,7 @@
 package com.hexvox.hashcheck;
 
 import java.io.File;
+import java.net.URISyntaxException;
 import java.net.URL;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -22,8 +23,15 @@ public class HashUtilTest {
     @BeforeClass
     public static void setUpClass(){
         testFileUrl = HashUtilTest.class.getClass().getResource("/test.txt");
-        assertNotNull("Test file missing", testFileUrl);
-        testFile = new File(testFileUrl.getPath());
+        assertNotNull("No test file path specified", testFileUrl);
+
+        try {
+            testFile = new File(testFileUrl.toURI());
+        } catch(URISyntaxException e){
+            System.out.println(e);
+        }
+        
+        assertTrue("Test file missing", testFile.exists());
     }
     
     /**
